@@ -6,4 +6,9 @@ export default defineConfig({
     host: '0.0.0.0',
     strictPort: true,
   },
+  preview: {
+    port: 43123,
+    host: '0.0.0.0',
+    strictPort: true,
+  },
 })
