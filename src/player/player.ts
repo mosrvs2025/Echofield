@@ -162,6 +162,7 @@ export class Player {
     }
     this.lastHurtBy = strike.swingId
     const result = this.vital.hurt(strike.damage, strike.poise, 0.42, strike.heavy ? 0.45 : 0.2)
+    if (result === 'none') return 'none'
     shove(this.body, this.body.x - strike.fromX, this.body.z - strike.fromZ, strike.knock * 1.4)
     if (result === 'dead') {
       this.downed = true
