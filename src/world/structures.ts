@@ -140,7 +140,7 @@ function buildCamp(
 
   const post = painted(cylGeo(0.08, 0.1, 2.2, 5), mat('#4a3b2e'), -2.4, yAt(-2.4, 6.4) + 1.1, 6.4)
   group.add(post)
-  const board = signBoard(['Verdant Rift  \u2190', '\u2192  Neon Vein'])
+  const board = signBoard(['Verdant Rift  ←', '→  Neon Vein'])
   board.position.set(-2.4, yAt(-2.4, 6.4) + 2.15, 6.4)
   group.add(board)
   blocks.push(aabb(-2.4, yAt(-2.4, 6.4) + 1, 6.4, 0.2, 1.1, 0.2))
